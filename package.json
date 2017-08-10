@@ -1,0 +1,39 @@
+{
+  "name": "pamplona",
+  "version": "0.1.0",
+  "description": "API/UI for Bull (https://github.com/OptimalBits/bull)",
+  "main": "pamplona.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FileShadow/pamplona.git"
+  },
+  "keywords": [
+    "pamplona",
+    "bull",
+    "ui",
+    "api",
+    "angular",
+    "redis",
+    "queue",
+    "message",
+    "job"
+  ],
+  "author": "Ritter <jlarson@fileshadow.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FileShadow/pamplona/issues"
+  },
+  "homepage": "https://github.com/FileShadow/pamplona#readme",
+  "devDependencies": {
+    "@angular/cli": "^1.2.6"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "bull": "^3.0.0-rc.4",
+    "debug": "^2.6.8",
+    "express": "^4.15.3",
+    "ioredis": "^3.1.2",
+    "socket.io": "^2.0.3"
+  }
+}

@@ -1,0 +1,64 @@
+.col-wrap {
+	display: table;
+	height: 100%;
+}
+.col-wrap > div {
+	display: table-cell;
+	height: 100%;
+}
+
+#pg-left-col {
+	width: 175px;
+	height: 100%;
+	background-color: #eee;
+	border-right: 1px solid #999;
+}
+
+.pg-col-title h2 {
+	margin: 4px 0 6px 0;
+	text-align: center;
+	font-size: 32px;
+	color: #fff;
+	-webkit-text-stroke: 1px #bbb;
+	-webkit-text-fill-color: #fff;
+}
+
+#nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+#nav li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0px 6px;
+	border-bottom: 1px solid #bbcbd7;
+	cursor: pointer;
+	background: #e3eaef;
+}
+#nav li:first-child {
+	border-top: 1px solid #bbcbd7;
+}
+#nav li div.state {
+	font-weight: bold;
+	line-height: 24px;
+}
+#nav li div.stat {
+	text-align: right;
+	line-height: 16px;
+}
+#nav li div.link {
+	font-weight: bold;
+	line-height: 40px;
+}
+
+#main {
+    font-size: 14px;
+}
+
+.queue-list ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}

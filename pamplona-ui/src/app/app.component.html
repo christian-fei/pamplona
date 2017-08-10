@@ -1,0 +1,55 @@
+<div id="pg-left-col" class="col-wrap">
+	<div>
+		<div class="pg-col-title">
+			<h2>{{title}}</h2>
+		</div>
+		<ul id="nav" *ngIf="systemStats">
+			<li>
+				<a routerLink="/active">
+					<div class="state">Active</div>
+					<div class="stat">{{systemStats.active}}</div>
+				</a>
+			</li>
+			<li>
+				<a routerLink="/waiting">
+					<div class="state">Waiting</div>
+					<div class="stat">{{systemStats.waiting}}</div>
+				</a>
+			</li>
+			<li>
+				<a routerLink="/delayed">
+					<div class="state">Delayed</div>
+					<div class="stat">{{systemStats.delayed}}</div>
+				</a>
+			</li>
+			<li>
+				<a routerLink="/failed">
+					<div class="state">Failed</div>
+					<div class="stat">{{systemStats.failed}}</div>
+				</a>
+			</li>
+			<li>
+				<a routerLink="/completed">
+					<div class="state">Completed</div>
+					<div class="stat">{{systemStats.completed}}</div>
+				</a>
+			</li>
+			<li>
+				<a routerLink="/queues">
+					<div class="link">Queues</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div id="pg-right-col" class="col-wrap">
+	<div id="main"></div>
+</div>
+<div class="queue-list" style="display:none;">
+	<ul>
+		<li *ngFor="let queue of queues">
+			<span>{{queue.name}}</span>
+		</li>
+	</ul>
+</div>
+
