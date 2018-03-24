@@ -2,8 +2,10 @@
   "name": "pamplona",
   "version": "0.1.0",
   "description": "API/UI for Bull (https://github.com/OptimalBits/bull)",
-  "main": "pamplona.js",
-  "scripts": {},
+  "main": "index.js",
+  "scripts": {
+    "start": "DEBUG='pamplona:*' node $npm_package_main"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FileShadow/pamplona.git"

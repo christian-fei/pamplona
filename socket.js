@@ -14,7 +14,10 @@
 			debug( "socket::connect;" );
 
 			// event handlers
-			socket.on( "stats", stats );
+			socket.on( "stats", (data, callback) => {
+				console.log('stats event', data)
+				stats(data, callback)
+			} );
 
 			api.getQueues()
 				.then( api.getStats )
